@@ -1,0 +1,154 @@
+<!-- images included on this page: 0218.jpg, umsi.jpg, maintenance.png (https://pixabay.com/p-1873378/?no_redirect), rpdr.jpg (https://c1.staticflickr.com/4/3425/3266369490_ca89ea4658.jpg), spiske-code.jpg (https://unsplash.com/photos/4T5MTKMrjZg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), todolist.jpg (https://unsplash.com/photos/ck0i9Dnjtj0), search.png (https://picryl.com/media/bubbles-search-find-computer-communication-83721c), database.jpg (https://unsplash.com/photos/r9JVo5sHvnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), carter-park.jpg (https://unsplash.com/photos/WJL4c7-eTlI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138469054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138469054-1');
+    </script>
+
+    <title>Index</title>
+</head>
+
+<!-- JS from W3Schools -->
+<script>
+    function navClick() {
+        var x = document.getElementById("topNav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+
+<body>
+    <a href='#content' class='skip'>Skip to Content</a>
+    <header>
+        <nav>
+            <ul class='navbar' id='topNav'>
+                <a href="javascript:void(0);" class="icon" onclick="navClick()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <li><a href='index.html' class='current'>Home</a></li>
+                <li><a href='experience.html'>Experience</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+
+
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <img src='images/0218.jpg' alt='Image of Kayla Guerrero' class='self1' />
+            <p>I'm currently a student at the University of Michigan School of Information. I'm passionate about creating efficient and accessible technology for all users.</p>
+        </div>
+
+    </header>
+    <main id='content'>
+        <h1>Portfolio</h1>
+        <div class="portfolio-container">
+            <figure class='item'>
+                <img src='images/maintenance.jpg' alt='Maintenance Icon' />
+                <figcaption>
+                    <p class='proj-title'>Undergoing Maintenance</p>
+                    <p>I'm currently updating my portfolio. Some viewers may experience interruptions while browsing.<p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/rpdr.jpg" alt="RuPaul's Drag Race Screenshot" />
+                <figcaption>
+                    <p class='proj-title'>Drag Race Search</p>
+                    <p>Small web application acting as a search engine for the TV show RuPaul's Drag Race.</p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/spiske-code.jpg" alt="Picture of Code" />
+                <figcaption>
+                    <p class='proj-title'>SI 206 Final Project</p>
+                    <p>Command line application allowing users to search for artists and observe selected statistics about them.</p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/todolist.jpg" alt="Picture of ToDo List" />
+                <figcaption>
+                    <p class='proj-title'>To-Do List App</p>
+                    <p>Simple web-based to-do list application.<p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/search.jpg" alt="Search Picture" />
+                <figcaption>
+                    <p class='proj-title'>Giphy Search</p>
+                    <p>Web-based application to search for and save collections of gifs from giphy.com.</p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/database.jpg" alt="Picture of Database" />
+                <figcaption>
+                    <p class='proj-title'>Cacao Database</p>
+                    <p>Application to practice sorting and storing CSV data into a database.</p>
+                </figcaption>
+            </figure>
+
+            <figure class='item'>
+                <img src="images/carter-park.jpg" alt='Nature Scenery Picture' />
+                <figcaption>
+                    <p class='proj-title'>National Site Search</p>
+                    <p>Program to scrape and search information about National Sites.</p>
+                </figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/kguerrero0607" aria-label="Go to Kayla's GitHub page">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kayla-guerrero/" aria-label="Go to Kayla's LinkedIn page">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        $(window).scroll(function() {
+            var navHeight = $('nav').height();
+
+            if ($(window).scrollTop() >= navHeight) {
+                $('nav').addClass('fixed-nav');
+            } else {
+                $('nav').removeClass('fixed-nav');
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>

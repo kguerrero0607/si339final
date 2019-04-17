@@ -1,0 +1,147 @@
+<!-- kundt-background.jpg (https://unsplash.com/photos/Fixg8KipOg8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138469054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138469054-1');
+    </script>
+
+    <title>Experience</title>
+</head>
+
+<!-- JS from W3Schools -->
+<script>
+    function navClick() {
+        var x = document.getElementById("topNav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+
+<body>
+    <a href='#content' class='skip'>Skip to Content</a>
+    <header>
+        <nav>
+            <ul class='navbar' id='topNav'>
+                <a href="javascript:void(0);" class="icon" onclick="navClick()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='experience.html' class='current'>Experience</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id='content'>
+
+        <div class="exp-container">
+
+            <div class="edu-container">
+                <h1>Education</h1>
+
+                <h2>University of Michigan <img src="images/umsi.jpg" alt="UMSI Logo" class='umsilogo'></h2>
+                <p>School of Information (2018-2020)</p>
+                <p>College of Literature, Science, and the Arts (2016-2018)</p>
+            </div>
+
+            <div class="work-container">
+                <h1>Work</h1>
+
+                <h2 id='accordion' class='accordion' tabindex="0">Computer Consultant</h2>
+                <div id='acc-panel' class="acc-panel">
+                    <p>University of Michigan - College of Literature, Science, and the Arts (Ann Arbor, MI)</p>
+                    <p>March 2018 - Present</p>
+                    <ul>
+                        <li>Provide computer software and hardware support to faculty and staff in 15 different departments within the College of Literature, Science, and the Arts</li>
+                        <li>Build and set up computers for faculty and staff on a large scale university network</li>
+                    </ul>
+                </div>
+
+                <h2 id='accordion' class='accordion' tabindex="0">Administrative Assistant</h2>
+                <div id='acc-panel' class="acc-panel">
+                    <p>All About Animals Rescue (Warren, MI)</p>
+                    <p>May 2017 - Present</p>
+                    <ul>
+                        <li>Determine most efficient and cost-effective treatment for individual clients specific to their pets and personal circumstances</li>
+                        <li>Manage inventory and prepare surgical tools to ensure efficient and safe surgeries and vaccinations for patients</li>
+                        <li>Check in patients for sterilization surgeries by organizing data in computer database and keeping clients in a safe and orderly environment</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="skill-container">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Coding (Python, C++) 80%</li>
+                    <li>Prototype Tools (Figma, Invision) 40%</li>
+                    <li>HTML, CSS, Javascript, JQuery 30%</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/kguerrero0607" aria-label="Go to Kayla's GitHub page">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kayla-guerrero/" aria-label="Go to Kayla's LinkedIn page">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        $(window).scroll(function() {
+            var navHeight = $('nav').height();
+
+            if ($(window).scrollTop() >= navHeight) {
+                $('nav').addClass('fixed-nav');
+            } else {
+                $('nav').removeClass('fixed-nav');
+            }
+
+        })
+
+        $('[id=acc-panel]').hide();
+
+        $('[id=accordion]').click(function() {
+            $(this).next().slideToggle();
+        })
+
+        $('[id=accordion]').keydown(function(e) {
+            if (e.keyCode == '13') {
+                $(this).next().slideToggle();
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>
