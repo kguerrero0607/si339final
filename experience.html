@@ -67,8 +67,8 @@
             <div class="work-container">
                 <h1>Work</h1>
 
-                <h2 id='accordion' class='accordion' tabindex="0">Computer Consultant</h2>
-                <div id='acc-panel' class="acc-panel">
+                <h2 id='accordion1' class='accordion' tabindex="0">Computer Consultant</h2>
+                <div id='acc-panel1' class="acc-panel">
                     <p>University of Michigan - College of Literature, Science, and the Arts (Ann Arbor, MI)</p>
                     <p>March 2018 - Present</p>
                     <ul>
@@ -77,8 +77,8 @@
                     </ul>
                 </div>
 
-                <h2 id='accordion' class='accordion' tabindex="0">Administrative Assistant</h2>
-                <div id='acc-panel' class="acc-panel">
+                <h2 id='accordion2' class='accordion' tabindex="0">Administrative Assistant</h2>
+                <div id='acc-panel2' class="acc-panel">
                     <p>All About Animals Rescue (Warren, MI)</p>
                     <p>May 2017 - Present</p>
                     <ul>
@@ -125,13 +125,13 @@
 
         })
 
-        $('[id=acc-panel]').hide();
+        $('[class=acc-panel]').hide();
 
-        $('[id=accordion]').click(function() {
+        $('[class=accordion]').click(function() {
             $(this).next().slideToggle();
         })
 
-        $('[id=accordion]').keydown(function(e) {
+        $('[class=accordion]').keydown(function(e) {
             if (e.keyCode == '13') {
                 $(this).next().slideToggle();
             }
