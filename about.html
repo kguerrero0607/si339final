@@ -63,7 +63,7 @@
 
             <div class="slideshow-container">
                 <div class="mySlides">
-                    <img src='images/IMG_3338.jpg' alt='Picture of Kayla' />
+                    <img src='images/IMG_3338.jpg' alt="Kayla's headshot" />
                 </div>
                 <div class="mySlides">
                     <img src='images/IMG_7889.jpg' alt='Picture of Kayla' />
@@ -73,8 +73,8 @@
                 <a class="next" onclick="plusSlides(1)" tabindex="0">&#10095;</a>
             </div>
             <div class='slideshow-dots' style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+                <span id='dot1' class="dot" onclick="currentSlide(1)" tabindex="0"></span>
+                <span id='dot2' class="dot" onclick="currentSlide(2)" tabindex="0"></span>
             </div>
 
             <p>I am currently pursuing a BS in Information at the University of Michigan. Additionally, because of my strong interest in humans, society, and culture, I've also decided to minor in anthropology.</p>
@@ -160,6 +160,18 @@
         $('.next').keydown(function(e) {
             if (e.keyCode == '13') {
                 plusSlides(1);
+            };
+        })
+
+        $('#dot1').keydown(function(e) {
+            if (e.keyCode == '13') {
+                currentSlide(1);
+            };
+        })
+
+        $('#dot2').keydown(function(e) {
+            if (e.keyCode == '13') {
+                currentSlide(2);
             };
         })
 
