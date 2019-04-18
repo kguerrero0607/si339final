@@ -22,22 +22,21 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-138469054-1');
+
+
+        function navClick() {
+            var x = document.getElementById("topNav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
     </script>
 
     <title>About Me</title>
 </head>
 
-<!-- JS from W3Schools -->
-<script>
-    function navClick() {
-        var x = document.getElementById("topNav");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-    }
-</script>
 
 <body>
     <a href='#content' class='skip'>Skip to Content</a>
