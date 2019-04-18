@@ -18,11 +18,13 @@ a{
 }
 
 .navbar{
+  display: block;
+  overflow: hidden;
   background-color: #2065a1;
 }
 
 .navbar a{
-  display: block;
+  display: inline-block;
   text-align: left;
   color: #fbf9fb;
   padding: 1em;
@@ -34,28 +36,29 @@ a{
 }
 
 
-.navbar li a:not(.current){
+.navbar a:not(.current){
   display: none;
 }
 
-.navbar .icon {
+.navbar a.icon {
+  display: inline-block;
   position: absolute;
   right: 0;
   background-color: #2065a1;
 }
 
-.navbar.responsive li{
+.navbar.responsive{
   position: static;
   display: block;
 }
 
-.navbar.responsive li a.icon {
+.navbar.responsive a.icon {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.navbar.responsive li a {
+.navbar.responsive a {
   display: block;
   text-align: left;
 }
@@ -380,7 +383,7 @@ input[type=submit] {
     flex-wrap: wrap;
   }
 
-  .navbar .icon{
+  #topNav.navbar .icon{
     display: none;
   }
 
@@ -388,7 +391,7 @@ input[type=submit] {
     max-width: 225px;
   }
 
-  #topNav.navbar li a{
+  #topNav.navbar a{
     display: block;
   }
 
